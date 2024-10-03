@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: nowrap; /* Menghindari pembungkusan ke baris baru */
+            gap: 10px; /* Jarak antara foto */
+            justify-content: space-between; /* Memberi jarak merata antar foto */
+        }
+        .gallery img {
+            width: calc(25% - 10px); /* Lebar setiap foto menjadi 25% dari lebar layar dikurangi jarak */
+            height: auto;
+            object-fit: cover; /* Menjaga rasio gambar */
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><h2>Home</h2></a>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        <img src="6.jpeg" alt="Photo 1">
+        <img src="2.jpeg" alt="Photo 2">
+        <img src="1.jpeg" alt="Photo 3">
+        <img src="4.jpeg" alt="Photo 4">
+    </div>
+
+</body>
+</html>
